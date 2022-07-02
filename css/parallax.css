@@ -1,0 +1,73 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    font-family: sans-serif;
+
+}
+
+.pic1{
+    background: url(../images/pic1.png);
+    height: 100%;
+}
+
+.pic2{
+    background: url(../images/pic2.png);
+    height: 40%;
+}
+
+.pic3{
+    background: url(../images/pic3.png);
+    height: 40%;
+}
+.pic1, .pic2, .pic3{
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*for fixed*/
+    background-attachment: fixed;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+ .light-section{
+    color: #666;
+    background-color: #f4f4f4;
+}
+ .dark-section{
+    color: #fff;
+    background-color: rgb(37, 36, 36);
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.ptext .border.trans{
+    background: transparent;
+}
+
+@media(max-width:700px){
+    
+    .pic1, .pic2, .pic3{
+        background-attachment: scroll;
+    }
+}
